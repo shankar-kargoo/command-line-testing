@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://profstream.com/curriculum/79/view?path=week_1/day_1/README.md -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./class1notes_files/7359bc3aa3"></script><script src="./class1notes_files/nr-984.min.js"></script><script async="" src="./class1notes_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7359bc3aa3","applicationID":"13666938","transactionName":"J1xdFUMLWllUSxxbRBZBWgJECENYHk9aXUY=","queueTime":0,"applicationTime":101,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=p(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function l(e,t){g[e]=p(e).concat(t)}function p(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",m[n]=t,t in f||(f[t]=[])})}var g={},m={},w={on:l,emit:n,get:d,listeners:p,context:t,buffer:v};return w}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},l=t.exports=o();l.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(m,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=s.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document,l="addEventListener",p="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},w=d&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[l]?(s[l]("DOMContentLoaded",i,!1),f[l]("load",r,!1)):(s[p]("onreadystatechange",o),f[p]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>ProfStream</title>
+	<link rel="stylesheet" media="all" href="./class1notes_files/application-93553b48c022a05a7352a1cbab42f662540579773dabdbbe78c1dc28670e948c.css">
+	<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="fzA5PXOpRzI4a+so9OXsl37JdE9pT8pRskHxYcmG0jAbkHGWp8s96RSODuAFLTMyDqvR9ZYWkXYFDsPwljajcg==">
+
+	<link rel="shortcut icon" type="image/png" href="https://profstream.com/assets/favicon-7a72a0be42afc61e8ad0c095ae64441c466f773c48d500981605de4865d887ec.png">
+
+	<script src="./class1notes_files/application-0c9a267cde4b573c916cb5a676011de4e594bdc490d27be41f4a2486a71843ee.js"></script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74761725-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div class="full-page-loader" style="display: none;">
+    <!--?xml version="1.0" encoding="utf-8"?--><svg width="130px" height="130px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><defs><filter id="uil-ring-shadow" x="-100%" y="-100%" width="300%" height="300%"><feoffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feoffset><fegaussianblur result="blurOut" in="offOut" stdDeviation="0"></fegaussianblur><feblend in="SourceGraphic" in2="blurOut" mode="normal"></feblend></filter></defs><path d="M10,50c0,0,0,0.5,0.1,1.4c0,0.5,0.1,1,0.2,1.7c0,0.3,0.1,0.7,0.1,1.1c0.1,0.4,0.1,0.8,0.2,1.2c0.2,0.8,0.3,1.8,0.5,2.8 c0.3,1,0.6,2.1,0.9,3.2c0.3,1.1,0.9,2.3,1.4,3.5c0.5,1.2,1.2,2.4,1.8,3.7c0.3,0.6,0.8,1.2,1.2,1.9c0.4,0.6,0.8,1.3,1.3,1.9 c1,1.2,1.9,2.6,3.1,3.7c2.2,2.5,5,4.7,7.9,6.7c3,2,6.5,3.4,10.1,4.6c3.6,1.1,7.5,1.5,11.2,1.6c4-0.1,7.7-0.6,11.3-1.6 c3.6-1.2,7-2.6,10-4.6c3-2,5.8-4.2,7.9-6.7c1.2-1.2,2.1-2.5,3.1-3.7c0.5-0.6,0.9-1.3,1.3-1.9c0.4-0.6,0.8-1.3,1.2-1.9 c0.6-1.3,1.3-2.5,1.8-3.7c0.5-1.2,1-2.4,1.4-3.5c0.3-1.1,0.6-2.2,0.9-3.2c0.2-1,0.4-1.9,0.5-2.8c0.1-0.4,0.1-0.8,0.2-1.2 c0-0.4,0.1-0.7,0.1-1.1c0.1-0.7,0.1-1.2,0.2-1.7C90,50.5,90,50,90,50s0,0.5,0,1.4c0,0.5,0,1,0,1.7c0,0.3,0,0.7,0,1.1 c0,0.4-0.1,0.8-0.1,1.2c-0.1,0.9-0.2,1.8-0.4,2.8c-0.2,1-0.5,2.1-0.7,3.3c-0.3,1.2-0.8,2.4-1.2,3.7c-0.2,0.7-0.5,1.3-0.8,1.9 c-0.3,0.7-0.6,1.3-0.9,2c-0.3,0.7-0.7,1.3-1.1,2c-0.4,0.7-0.7,1.4-1.2,2c-1,1.3-1.9,2.7-3.1,4c-2.2,2.7-5,5-8.1,7.1 c-0.8,0.5-1.6,1-2.4,1.5c-0.8,0.5-1.7,0.9-2.6,1.3L66,87.7l-1.4,0.5c-0.9,0.3-1.8,0.7-2.8,1c-3.8,1.1-7.9,1.7-11.8,1.8L47,90.8 c-1,0-2-0.2-3-0.3l-1.5-0.2l-0.7-0.1L41.1,90c-1-0.3-1.9-0.5-2.9-0.7c-0.9-0.3-1.9-0.7-2.8-1L34,87.7l-1.3-0.6 c-0.9-0.4-1.8-0.8-2.6-1.3c-0.8-0.5-1.6-1-2.4-1.5c-3.1-2.1-5.9-4.5-8.1-7.1c-1.2-1.2-2.1-2.7-3.1-4c-0.5-0.6-0.8-1.4-1.2-2 c-0.4-0.7-0.8-1.3-1.1-2c-0.3-0.7-0.6-1.3-0.9-2c-0.3-0.7-0.6-1.3-0.8-1.9c-0.4-1.3-0.9-2.5-1.2-3.7c-0.3-1.2-0.5-2.3-0.7-3.3 c-0.2-1-0.3-2-0.4-2.8c-0.1-0.4-0.1-0.8-0.1-1.2c0-0.4,0-0.7,0-1.1c0-0.7,0-1.2,0-1.7C10,50.5,10,50,10,50z" fill="#59ebff" filter="url(#uil-ring-shadow)" transform="rotate(182.599 50 50)"><animatetransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite" dur="1s"></animatetransform></path></svg>
+    <div class="margin-top-40 text-muted" style="padding-left:40px;">
+        Loading...
+    </div>
+</div>
+
+
+<input type="hidden" id="curriculum-path" value="/curriculum/79">
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#notes-view-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://profstream.com/curriculum/79">
+				<i class="fa fa-chevron-left"></i>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="notes-view-collapse">
+			<ul class="nav navbar-nav">
+				<li><a data-toggle="modal" data-target="#curriculum-summary-modal" href="https://profstream.com/curriculum/79/view?path=week_1/day_1/README.md#">Summary</a></li>
+					<li><a data-toggle="modal" data-target="#curriculum-projects-modal" href="https://profstream.com/curriculum/79/view?path=week_1/day_1/README.md#">Projects</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<input type="hidden" id="page_id" value="show_file">
+<input type="hidden" id="raw-url" value="/curriculum/79/raw?path=week_1/day_1/">
+
+<div id="show-code-popup-container"></div>
+
+<div class="container notes-container">
+	<div id="markdown-output"><h1 id="introduction-to-fewd-and-git-intro">Introduction to FEWD and Git Intro</h1>
+<h2 id="instructor-information">Instructor Information</h2>
+<ul>
+<li>Arun Sood</li>
+<li>Email: arun.instructor@gmail.com</li>
+</ul>
+<h2 id="class-materials">Class Materials</h2>
+<ul>
+<li>Class notes will be found here on ProfStream.</li>
+<li>Class discussions will be on Slack and each class will receive its own chatroom.</li>
+</ul>
+<h2 id="overview-of-front-end-web-development">Overview of Front-End Web Development</h2>
+<ul>
+<li>Front-end web development consists of writing code in HTML, CSS, and JavaScript.</li>
+<li>HTML is the structure of the page. It is the scaffold that adds various layout elements to your website.</li>
+<li>CSS is a set of style properties that give your page its look and feel. It gives HTML style.</li>
+<li>JavaScript adds interactivity to your pages and makes them dynamic. Think of dropdown menus, sliding and fading boxes, dynamic content reloading, etc.</li>
+</ul>
+<h2 id="overview-of-back-end-web-development">Overview of Back-End Web Development</h2>
+<ul>
+<li>The back-end is a set of tools that enable the greater functionality of the website.</li>
+<li>Usually included in the back-end logic is database interaction.</li>
+<li>Here are a few examples of back-end languages:<ul>
+<li>Ruby</li>
+<li>PHP</li>
+<li>Python</li>
+<li>C++</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-be-a-professional-developer">How to Be a Professional Developer</h2>
+<ul>
+<li><a href="https://github.com/">GitHub</a> is a tool that allows you to create versions of your project. It is highly used in the industry to save changes and also enable collaboration.<ul>
+<li>We will not be covering GitHub in this course, but I encourage you all to create an account and add each other.</li>
+<li>GitHub is highly used to vet developers, so it's a good idea to get some street cred on it.</li>
+</ul>
+</li>
+<li>Sublime Text is a fancy text editor that allows you to write code in many different languages. It helps you with syntax highlighting, code completion, error checking, and more.</li>
+<li>Frameworks:<ul>
+<li>Most developers use frameworks to help with projects.</li>
+<li>Frameworks are pieces of software that are pre-written that help speed up the front-end web development process.</li>
+<li>In this class we will learn the basics first, and then get into two frameworks to help you along.</li>
+</ul>
+</li>
+</ul>
+<h2 id="student-expectations">Student Expectations</h2>
+<ul>
+<li>Be "present" and engage in class.</li>
+<li>Be on time to get the most out of your experience and allow others to do the same.</li>
+<li>Do all homework assignments because most of the time we will be building off of them.</li>
+</ul>
+<h2 id="instructor-expectations">Instructor Expectations</h2>
+<ul>
+<li>You can expect us to be available to answer questions within reason in and outside of class.</li>
+<li>TAs will be available during the week for planned office hours.</li>
+<li>Homework feedback will be given weekly.</li>
+</ul>
+<h2 id="front-end-taboo-">Front-End Taboo!</h2>
+<ul>
+<li>Using the given cards, try to find two other matching peers that complement the frontend languages you now know of.</li>
+<li>For example - if your card says HTML, you are going to look for a person with a CSS card and another with a JavaScript card.</li>
+<li><strong>The catch is that you cannot tell anyone what your card says.</strong></li>
+<li>You have to rely on being able to explain in as much depth as you know what your language is.</li>
+</ul>
+<h2 id="the-command-line">The Command Line</h2>
+<p>The command line is a terminal giving you direct access to your operating system. You can enter simple commands to perform a variety of functions.</p>
+<p>Many of the tasks we need to carry out (such as committing our code) are best performed in the command line.</p>
+<p>Here are a couple of resources to help you learn:</p>
+<ul>
+<li><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></li>
+<li><a href="http://praxis.scholarslab.org/scratchpad/bash/">http://praxis.scholarslab.org/scratchpad/bash/</a></li>
+</ul>
+<h2 id="in-class-demonstration">In-Class Demonstration</h2>
+<ol>
+<li>Create a new directory</li>
+<li>Create a new file and add some text to it</li>
+<li>Create a directory with a file inside of your current directory</li>
+<li>Practice navigating back and forth between directories</li>
+<li>Rename one of your directories</li>
+</ol>
+<h2 id="introduction-to-git">Introduction to Git</h2>
+<ul>
+<li>Git is a source control management tool.</li>
+<li>Git allows you to store and update your code in a structured way.</li>
+<li>Git includes history of changes you make, so you can create "checkpoints" and track your work better over time.</li>
+<li>Git is an intelligent tool, and does many things for you automatically, but can be tricky to use in some cases. It takes a bit of learning to get fully comfortable with Git.</li>
+</ul>
+<h2 id="what-is-github-">What is GitHub?</h2>
+<ul>
+<li>GitHub is a service that lets you host Git repositories in the cloud.<ul>
+<li>In other words, they are hosted remotely by GitHub, and can be downloaded from / uploaded to over the internet.</li>
+</ul>
+</li>
+<li>GitHub allows you to easily distribute code to others by sharing your repository.</li>
+<li>GitHub lets you view your code online easily with a web interface.</li>
+<li>GitHub is free to use as long as you make your code public.
+Private repositories cost a monthly fee.</li>
+</ul>
+<h2 id="git-class-demonstration">Git Class Demonstration</h2>
+<ul>
+<li>We will practice setting up a new Git repository and pushing it to GitHub.</li>
+<li>Note that empty repositories cannot be added to GitHub.</li>
+<li>Here is a cheatsheet of commands we will be using:</li>
+</ul>
+<p>Add files to Git tracking:</p>
+<pre><code class="lang-bash hljs">git add -A
+</code></pre>
+<p>Commit files to local Git repository:</p>
+<pre><code class="lang-bash hljs">git commit -m <span class="hljs-string">"Initial commit"</span>
+</code></pre>
+<p>Add remote to push to:</p>
+<pre><code class="lang-bash hljs">git remote add origin http://yourgithuburl.com
+</code></pre>
+<p>Push to remote repository:</p>
+<pre><code class="lang-bash hljs">git push -u origin master
+</code></pre>
+<h2 id="homework-submission-guidelines">Homework Submission Guidelines</h2>
+<ul>
+<li>Each homework assignment will be set up as a separate Git repository on GitHub.</li>
+<li>Refer to the detailed guide (linked in the summary) for step-by-step instructions.</li>
+<li>You will add the link to your project to the homework Google spreadsheet.</li>
+<li>You will be assessed on three factors:<ul>
+<li>Readability of your code (1-3)</li>
+<li>Does it run? (1-3)</li>
+<li>Are best practices followed? (1-3)</li>
+</ul>
+</li>
+<li>Assessments will be added as issues to your GitHub repository.</li>
+</ul>
+<h2 id="html-syntax">HTML Syntax</h2>
+<ul>
+<li>Tags are elements on the page. Each have their own name and are enclosed by the caret syntax.</li>
+</ul>
+<p><img src="./class1notes_files/raw" alt="HTML Tag Syntax"></p>
+<ul>
+<li>Most tags have attributes that can add additional information to the element.</li>
+</ul>
+<p><img src="./class1notes_files/raw(1)" alt="HTML Tag Attributes"></p>
+<h2 id="content-tags">Content Tags</h2>
+<h5 id="heading-elements">Heading Elements</h5>
+<pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Largest Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>Smallest Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+</code></pre>
+<h5 id="text-elements">Text Elements</h5>
+<pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is a Paragraph<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>This is some Bold Text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>This is some Small Text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+</code></pre>
+<h5 id="lists">Lists</h5>
+<pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>First List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Second List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Third List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Fourth List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>First List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Second List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Third List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Fourth List Item<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<h5 id="links">Links</h5>
+<pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"mylink.html"</span>&gt;</span>My Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<h2 id="general-assembly-press-release-code-along">General Assembly Press Release Code-Along</h2>
+<h5 id="consider-the-following-text-">Consider the following text:</h5>
+<blockquote>
+<p>For Immediate Release General Assembly, which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in: Berlin Boston Hong Kong London Los Angeles New York City San Francisco Sydney Washington D.C For more information, visit General Assembly's Website.</p>
+</blockquote>
+<ul>
+<li>How could we arrange this text in a layout that makes sense?</li>
+<li>Which HTML tags may we want to use here?</li>
+</ul>
+<h2 id="in-class-lab-homework">In-Class Lab / Homework</h2>
+<ul>
+<li>For this exercise we will be coding a simple cookie recipe.</li>
+<li>The starter code for this exercise is available above under "Projects".</li>
+<li>In order to complete the assignment you will need to research the <code>&lt;img&gt;</code> tag.</li>
+</ul>
+</div>
+</div>
+
+<!--Pop Up Window to Show Code-->
+<script id="show-code-popup-template" type="text/x-handlebars-template">
+	<div id="show-code-popup" class="fullscreen-pop-window fpw-hide">
+		<div class="fpw-nav">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						&lt; Code &#47;&gt;
+					</div>
+					<div class="col-sm-6">
+						<div class="pull-right">
+							<a href="#">
+								<span class="fpw-close glyphicon glyphicon-remove"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container margin-top-20">
+			<div class="fpw-code">
+				<pre><code>
+					<br>{{{code}}}
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</script>
+<!--/Pop Up Window to Show Code-->
+
+<div id="curriculum-summary-modal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title">Front End Web Development 10-Week A</h4>
+			</div>
+			<div class="curriculum-summary modal-body">
+				<h1>Front End Web Development 10 Week</h1>
+
+<h3>Week 1: Introduction to Front End Web Development</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_1/day_1/README.md">Day 1: Introduction to FEWD and Git intro</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_1/day_2/README.md">Day 2: HTML review and CSS introduction</a></li>
+</ul>
+
+<h3>Week 2: HTML Review and Introduction to CSS</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_2/day_1/README.md">Day 1: CSS layouts</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_2/day_2/README.md">Day 2: More layout</a></li>
+</ul>
+
+<h3>Week 3: More Layout and Advanced CSS Selectors</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_3/day_1/README.md">Day 1: Advanced CSS selectors</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_3/day_2/README.md">Day 2: Introduction to Responsive Development</a></li>
+</ul>
+
+<h3>Week 4: Responsive Development and Review</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_4/day_1/README.md">Day 1: Bootstrap Framework</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_4/day_2/README.md">Day 2: Review</a></li>
+</ul>
+
+<h3>Week 5: Intro to JavaScript and jQuery</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_5/day_1/README.md">Day 1: Introduction to jQuery</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_5/day_2/README.md">Day 2: If - Else Statements</a></li>
+</ul>
+
+<h3>Week 6: JavaScript Logic and Review</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_6/day_1/README.md">Day 1: Form Elements</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_6/day_2/README.md">Day 2: GH Pages and Review</a></li>
+</ul>
+
+<h3>Week 7: jQuery Animations</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_7/day_1/README.md">Day 1: jQuery Animations</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_7/day_2/README.md">Day 2: Enhancing with jQuery</a></li>
+</ul>
+
+<h3>Week 8: Problem Solving with JavaScript and AJAX</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_8/day_1/README.md">Day 1: Building a Complex Nav</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_8/day_2/README.md">Day 2: Introduction to AJAX</a></li>
+</ul>
+
+<h3>Week 9: Templating and Student Choice</h3>
+
+<ul>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_9/day_1/README.md">Day 1: Templating with Dynamic Data</a></li>
+<li><a href="https://profstream.com/curriculum/79/view?path=week_9/day_2/README.md">Day 2: Student Choice (SCSS)</a></li>
+</ul>
+
+<h3>Week 10: Student Choice and Lab</h3>
+
+<ul>
+<li>Day 1: Project Work Lab</li>
+<li>Day 2: Presentations and Graduation!</li>
+</ul>
+
+<h3><a href="https://profstream.com/curriculum/79/view?path=homework_guide/README.md">Homework Guide</a></h3>
+
+<h3><a href="https://profstream.com/curriculum/79/view?path=final_project/README.md">Final Project</a></h3>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<div id="curriculum-projects-modal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Front End Web Development 10-Week A Projects</h4>
+				</div>
+				<div class="modal-body max-height-400">
+					<table class="table table-hover">
+							<tbody><tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/23" target="_blank">
+											Cookie Recipe
+										</a>
+									</div>
+									<div>
+										Simple cookie recipe project using HTML without CSS.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="26" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/21" target="_blank">
+											Wendy G. Bite Resume and About Me
+										</a>
+									</div>
+									<div>
+										Resume and about me project based on two mockups.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="24" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/29" target="_blank">
+											Shakespeares Plays CSS
+										</a>
+									</div>
+									<div>
+										Exercise to practice CSS selectors.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="32" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/30" target="_blank">
+											Fashion Blog
+										</a>
+									</div>
+									<div>
+										Fashion blog mockup to HTML and CSS.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="33" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/40" target="_blank">
+											Responsive Development Lab
+										</a>
+									</div>
+									<div>
+										Lab to practice implementing responsive practices.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="43" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/44" target="_blank">
+											Bootstrap Layouts
+										</a>
+									</div>
+									<div>
+										Project to practice using Bootstrap to create layouts.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="47" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/46" target="_blank">
+											jQuery Style Switcher
+										</a>
+									</div>
+									<div>
+										Style switcher activity to practice jQuery DOM manipulation.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="49" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/6" target="_blank">
+											Score Keeper
+										</a>
+									</div>
+									<div>
+										Score keeper project for JavaScript.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="9" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/50" target="_blank">
+											TicTacToe from Scratch
+										</a>
+									</div>
+									<div>
+										The game of TicTacToe from scratch.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="53" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/51" target="_blank">
+											Rock Paper Scissors
+										</a>
+									</div>
+									<div>
+										Game of Rock Paper Scissors in JavaScript.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="54" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/18" target="_blank">
+											Gettysburg Address
+										</a>
+									</div>
+									<div>
+										Project to test your knowledge of jQuery event handling and animations.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="21" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/52" target="_blank">
+											jQuery Landing Page
+										</a>
+									</div>
+									<div>
+										jQuery-enhanced landing page.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="55" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/19" target="_blank">
+											Divided Times
+										</a>
+									</div>
+									<div>
+										Newspaper article front end using jQuery.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="22" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/12" target="_blank">
+											Wine Manager
+										</a>
+									</div>
+									<div>
+										Wine manager template for use with any language / framework.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="15" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/28" target="_blank">
+											Movie Search App
+										</a>
+									</div>
+									<div>
+										Movie search app using the OMDB API.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="31" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="bold">
+										<a href="https://profstream.com/projects/53" target="_blank">
+											Bootstrap Off Canvas Template
+										</a>
+									</div>
+									<div>
+										Project to work with Bootstrap to develop a simple template.
+									</div>
+								</td>
+								<td class="txt-right">
+									<button data-id="56" data-branch="master" type="button" class="btn btn-primary btn-sm download-project-button">Download</button>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<div class="fullscreen-image">
+	<i class="fa fa-remove white-text fullscreen-image-close"></i>
+	<img src="./class1notes_files/profile-placeholder-1021af81055d6389a14170b09af9942aebac6db33f7e390b96875fefcee1e8a0.png">
+</div>
+
+	<div class="project-modal-launch">
+    <i class="fa fa-cloud-download fa-fw"></i>
+</div>
+
+
+
+
+
+
+</body></html>
